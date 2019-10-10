@@ -3,11 +3,12 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var webpack  = require('webpack')
 module.exports = {
     mode:"development",
-    entry: './index.js',
+    entry: './src/index.js',
     output: {
         path: path.join(__dirname, '/dist'),
-        filename: 'js/index.js',
-        publicPath: "/"
+        filename: 'js/app-client.js',
+        publicPath: "/",
+        chunkFilename:'[name].js'
     },
     resolve: {
         extensions: ['.js', '.jsx']
@@ -25,7 +26,7 @@ module.exports = {
     plugins: [
       new HtmlWebpackPlugin({
         filename: 'index.html',
-        template:path.resolve('index.html'),
+        template:path.resolve('public/index.html'),
         data:new Date(),
         minify:{
           collapseWhitespace: false,
