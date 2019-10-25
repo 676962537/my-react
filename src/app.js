@@ -47,6 +47,11 @@ function Navigation(){
           <li><NavLink to="/about">About</NavLink></li>
           <li><NavLink to="/topic">Topic</NavLink></li>
           <li><NavLink to="/topic/1">Topic / 1</NavLink></li>
+          <li><NavLink to="/promise">promise</NavLink></li>
+          <li><NavLink to="/useState">useState</NavLink></li>
+          <li><NavLink to="/useEffect">useEffect</NavLink></li>
+          <li><NavLink to="/rerender">rerender</NavLink></li>
+          <li><NavLink to="/customerHook">customerHook</NavLink></li>
         </ul>
       </div>
   )
@@ -85,6 +90,11 @@ export default function App(props){
           <Route path="/index" component={loadable(() => import( /* webpackChunkName: "index" */ "./route/index.js"))}/>
           <Route path="/about" component={loadable(() => import( /* webpackChunkName: "about" */ "./route/about.js"))}/>
           <Route path="/topic" component={loadable(() => import( /* webpackChunkName: "topic" */ "./route/topic.js"))}/>
+          <Route path="/promise" component={loadable(() => import( /* webpackChunkName: "hook" */ "./hook/promise.js"))}/>
+          <Route path="/useState" component={loadable(() => import( /* webpackChunkName: "useState" */ "./hook/useState.js"))}/>
+          <Route path="/useEffect" component={loadable(() => import( /* webpackChunkName: "useEffect" */ "./hook/useEffect.js"))}/>
+          <Route path="/rerender" component={loadable(() => import( /* webpackChunkName: "rerender" */ "./hook/rerender.js"))}/>
+          <Route path="/customerHook" component={loadable(() => import( /* webpackChunkName: "customerHook" */ "./hook/customerHook.js"))}/>
           {/*<Route path="/:id" component={Show} />*/}
         {/*</Switch>*/}
       </div>
