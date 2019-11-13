@@ -24,11 +24,13 @@ function Example2() {
   const [count, setCount] = useState(0);
   // 首次渲染和dom更新都会执行
   useEffect(() => {
-    console.log("Example2 components updated!");
-    return () => {
-      // 组件销毁/卸载的时候会执行
-      console.log("Example2 components destory");
-    }
+    // console.log("Example2 components updated!");
+    // return () => {
+    //   // 组件销毁/卸载的时候会执行
+    //   console.log("Example2 components destory");
+    // }
+    setCount(2);
+    console.log("count:",count);
   });
   return (
       <div>
@@ -51,4 +53,4 @@ function Example() {
       </div>
   );
 }
-export default Example
+export default Example2
