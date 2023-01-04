@@ -17,7 +17,7 @@
     "@babel/preset-react": "*",
     "@loadable/component": "^5.10.3",
     "history": "^4.10.1",
-    "html-webpack-plugin": "^3.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-router": "^5.1.0",
